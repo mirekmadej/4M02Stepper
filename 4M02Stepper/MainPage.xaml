@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M02Stepper.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Hello, World!"
+                FontSize="10"
+                x:Name="lblNapis"
+                 />
+            <Stepper
+                Value="10"
+                Minimum="10"
+                Maximum="50"
+                Increment="1"
+                ValueChanged="onStepperChanged"
+                x:Name="stStepper1"
+                />
+            <Label
+                Text="rozmiar czcionki: 10"
+                x:Name="lblRozmiar"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
